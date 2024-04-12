@@ -1,0 +1,26 @@
+### list developers
+GET http://localhost:3000/developers
+
+### get developer
+GET http://localhost:3000/developers/dev_R70Y8ZWOwZzo-6uNezxfI
+
+### create developer
+POST http://localhost:3000/developers/
+Content-Type: application/json
+
+{
+    "name": "Felipe Sander",
+    "email": "Felipe.Sander@gmail.com",
+    "dateOfBirth": "2000-01-01"
+}
+
+### update developer
+PATCH http://localhost:3000/developers/dev_R70Y8ZWOwZzo-6uNezxfI
+Content-Type: application/json
+
+{
+    "email": "teste@gmail.com"
+}
+
+### delete developer
+DELETE http://localhost:3000/developers/dev_BQVVx564WK8gYXkyrqTVR
